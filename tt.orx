@@ -1,0 +1,25 @@
+.?TABLE
+{
+   ATOM $p1=T;
+   ATOM $q1=F;
+   ATOM $p2=F;
+   ATOM $q2=T;
+
+  COMPLEX $A=~~~~~~~~$p2&&$q1||~~~~~~~~(~$q2^$p1||~$q2&&~$p2)->(~$q1&&~$p2)&&($q1->$p2||($q1||~$p2))->~~~~~($p1->$q2||~~~~($q2^$p1));
+ COMPLEX $B=~~~~($p2->$q1)||$p2;
+
+   .write("list of $A");.ln;
+ .fct($A);
+ .write("show table of $A");.ln;
+ .svt($A);
+ .write("show table ex of $A");.ln;
+ .svtex($A);
+ .write("list of $B");.ln;
+ .fct($B);
+ .write("show table ex of $B");.ln;
+ .svtex($B);
+ .write("show table of $B");.ln;
+ .svt($B);.ln;
+
+}
+

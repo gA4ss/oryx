@@ -1,0 +1,91 @@
+//try logix code
+.?OneTh
+{ 
+  .write("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");.ln;
+  ATOM $p1=T;
+  ATOM $q1=F;
+  ATOM $p2=F;
+  ATOM $q2=T;
+  COMPLEX $A=$p2&&$q1||(~$q2^$p1||~$q2&&~$p2)->(~$q1&&~$p2)&&($q1->$p2||($q1||~$p2));
+  STRING $s="I AM A HACKER";
+
+  STRING $x="p1=";
+  .write($x);
+  .write($p1);
+  .ln;
+
+  .show_vertblex($A);
+  .ln;
+
+  $x="q1=";
+  .write($x);
+  .write($q1);
+  .ln;
+  
+  $x="p2=";
+  .write($x);
+  .write($p2);
+  .ln;
+
+  $x= "q2=";
+  $q2 = T;
+  .write($x);
+  .write($q2);
+  .ln;
+
+  $x="A=";
+  .write($x);
+  .write($A);
+  .ln;
+
+  .write("$XXX=");
+  COMPLEX $XXX=~$p2;
+  .write($XXX);.ln;
+
+  .write("you a fdafdsaa");.ln;
+
+  $x="input A=";
+  .write($x);
+  .read($A);
+  .write($A);//xxxxxx 
+  .ln;
+  STRING $ssss="SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS";
+  .write($ssss);.ln;
+  .read($ssss);.ln;
+  .write($ssss);.ln;
+ // $x="s=";
+//  .write($x);
+//  .write($s);
+//  .ln;
+  
+//  .read($x);
+//  .write($x);
+//  .ln;
+  
+  ATOM $m=T;
+  ATOM $n=T;
+  .write("b= ");
+  COMPLEX $b=$n<->$m;
+  .write($b);.ln;
+  $m=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$m||~~~~~~~~~~~~~~~~~~~~~~~~~~(~~~~~~~~~~~~~~$m&&~~~~~~~~~~~~~$m);
+  .write($m);.ln;
+  .write("fdsafdsafdsafdsafsa");.ln;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

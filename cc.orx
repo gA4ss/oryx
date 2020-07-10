@@ -1,0 +1,13 @@
+.?TABLE
+{
+	ATOM $p1=T;
+  	ATOM $q1=F;
+  	ATOM $p2=F;
+  	ATOM $q2=T;
+	//COMPLEX $A=$p1->$p2&&(~~$p2||$q1);
+	//COMPLEX $A=$p1||$q2;
+	COMPLEX $A=$p2&&$q1||(~$q2^$p1||~$q2&&~$p2)->(~$q1&&~$p2)&&($q1->$p2||($q1||~$p2));
+	.show_vertbl($A);
+	//.write($A);
+	.ln;
+}
